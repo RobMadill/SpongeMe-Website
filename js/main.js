@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bordercolor: "black"
     }
     //getting dom elements
-    let topText = document.getElementById('topText');
+    let topText = document.getElementById('top-text');
     let bottomText = document.getElementById('btm-text');
     let download = document.getElementById('download');
     //defaults sent to canvas
