@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+form>input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 500;
+    position: absolute;
+    margin: 0 0 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer>ul {
+    list-style: none;
+}
+
+.fa {
+    color: #121212;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
