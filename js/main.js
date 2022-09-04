@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bordercolor: "black"
     }
     //getting dom elements
-    let topText = document.getElementById('top-text');
+    let topText = document.getElementById('topText');
     let bottomText = document.getElementById('btm-text');
     let download = document.getElementById('download');
     //defaults sent to canvas
@@ -36,17 +36,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     //downloading canvas as image
     download.addEventListener("click", function () {
-        //create new element - append to body
-        let a = document.createElement('a');
-        document.body.appendChild(a);
-        //set href to convas data url
-        a.href = go.canvas.toDataURL('image/jpeg');
-        //set download name
-        a.download = 'mocking-spongebob.png';
-        a.click();
-        //remove element oonce clicked
-        document.body.removeChild(a);
+        //IE/Edge support (PNG only)
+        if (window.navigator.msSaveBlob) {
+            window.navigator.msSaveBlob(go.canvas.msToBlob(), 'mocking-spongebob.png');
+        }
+        //other browsers
+        else {
+            //create new element - append to body
+            let a = document.createElement('a');
+            document.body.appendChild(a);
+            //set href to convas data url
+            a.href = go.canvas.toDataURL('image/jpeg');
+            //set download name
+            a.download = 'mocking-spongebob.png';
+            a.click();
+            //remove element once clicked
+            document.body.removeChild(a);
+        }
     });
+
 });
 
 //function to send attributes to canvas
