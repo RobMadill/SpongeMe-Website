@@ -18,17 +18,34 @@ document.addEventListener("DOMContentLoaded", () => {
         color: "white",
         bordercolor: "black"
     }
+    //getting dom elements
+    let topText = document.getElementById('top-text');
+    let bottomText = document.getElementById('btm-text');
+    let download = document.getElementById('download');
     //defaults sent to canvas
     sendToCanvas(canvasObj);
     //sending top text to canvas with user input
-    document.getElementById('top-text').addEventListener("input", function () {
+    topText.addEventListener("input", function () {
         canvasObj.toptext = convertText(this.value);
         sendToCanvas(canvasObj);
     });
     //sending bottom text to canvas with user input
-    document.getElementById('btm-text').addEventListener("input", function () {
+    bottomText.addEventListener("input", function () {
         canvasObj.bottomtext = convertText(this.value);
         sendToCanvas(canvasObj);
+    });
+    //downloading canvas as image
+    download.addEventListener("click", function () {
+        //create new element - append to body
+        let a = document.createElement('a');
+        document.body.appendChild(a);
+        //set href to convas data url
+        a.href = go.canvas.toDataURL('image/jpeg');
+        //set download name
+        a.download = 'mocking-spongebob.png';
+        a.click();
+        //remove element oonce clicked
+        document.body.removeChild(a);
     });
 });
 
