@@ -15,24 +15,28 @@
 
 <body>
     <h1>SPONGEME</h1>
-    <canvas id="spongebob"></canvas>
-    <br>
-    <input id="top-text" type="text" name="top-text" maxlength="15" placeholder="TOP TEXT">
-    <br>
-    <input id="btm-text" type="text" name="text" maxlength="15" placeholder="BOTTOM TEXT">
-    <br>
-    <input id="download" type="button" value="SPONGE-IFY">
-    <footer>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/robert-madill/" target="_blank" rel="noopener noreferrer"
-                    class="fa fa-linkedin"></a>
-                <a href="https://github.com/RobMadill" target="_blank" rel="noopener noreferrer"
-                    class="fa fa-github"></a>
-            </li>
-        </ul>
-        <script src="js/footer.js"></script>
-    </footer>
+    <hr>
+    <div class="flex-container">
+        <div class="column1">
+            <canvas id="spongebob"></canvas>
+        </div>
+        <div class="column2">
+            <input id="top-text" type="text" name="top-text" maxlength="15" placeholder="TOP TEXT">
+            <input id="btm-text" type="text" name="text" maxlength="15" placeholder="BOTTOM TEXT">
+            <input id="download" type="button" value="SPONGE-IFY">
+        </div>
+        <div class="column3">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/robert-madill/" target="_blank" rel="noopener noreferrer"
+                        class="fa fa-linkedin"></a>
+                    <a href="https://github.com/RobMadill" target="_blank" rel="noopener noreferrer"
+                        class="fa fa-github"></a>
+                </li>
+            </ul>
+            <div id="copyright"></div>
+        </div>
+    </div>
 </body>
 
 </html>

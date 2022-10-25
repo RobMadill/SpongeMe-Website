@@ -2,10 +2,12 @@ let go = {} //creating empty gloabl object
 
 //access to dom elements
 document.addEventListener("DOMContentLoaded", () => {
-    //creating canvas with default height and width
+    //setting copyright to current year
+    document.getElementById('copyright').innerHTML = '&copy; '
+        + new Date().getFullYear() + ' '
+        + 'Robert Madill - All Rights Reserved';
+    //creating canvas element
     go.canvas = document.getElementById('spongebob');
-    go.canvas.width = 500;
-    go.canvas.height = 500;
 
     go.ctx = go.canvas.getContext('2d')
     //default canvas attruibutes
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bottomtext: "bOtToM tExT",
         image: "img/spongebob.png",
         fontWeight: "bold",
-        fontSize: "450%",
+        fontSize: "200%",
         color: "white",
         bordercolor: "black"
     }
