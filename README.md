@@ -20,7 +20,7 @@
 <h3 align="center">SpongeMe</h3>
 
   <p align="center">
-    project_description
+    Simple meme generator that allows users to create their own Mocking SpongeBob meme. The idea was given to me by a friend after I had finished my second semester in second year. Thanks Spencer
     <br />
     <a href="https://github.com/RobMadill/SpongeMe-Website"><strong>Explore the docs »</strong></a>
     <br />
@@ -72,9 +72,8 @@
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This Website is simple and easy to use! First enter the text you'd like on top and then at the bottom. 
+Once finished click SPONGE-IFY and you'll be prompted to download the image as a .jpg
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -132,6 +131,6 @@ Project Link: [https://github.com/RobMadill/SpongeMe-Website](https://github.com
 [issues-shield]: https://img.shields.io/github/issues/RobMadill/SpongeMe-Website.svg?style=for-the-badge
 [issues-url]: https://github.com/RobMadill/SpongeMe-Website/issues
 [license-shield]: https://img.shields.io/github/license/RobMadill/SpongeMe-Website.svg?style=for-the-badge
-[license-url]: https://github.com/RobMadill/SpongeMe-Website/blob/master/LICENSE.txt
+[license-url]: https://github.com/RobMadill/SpongeMe-Website/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/robert-madill/
