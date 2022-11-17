@@ -20,7 +20,7 @@
 <h3 align="center">SpongeMe</h3>
 
   <p align="center">
-    Simple meme generator that allows users to create their own Mocking SpongeBob meme. The idea was given to me by a friend after I had finished my second semester in second year at Sheridan College taking Software Development & Network Engineering. Thanks Spencer
+    Simple meme generator that allows users to create their own Mocking SpongeBob meme
     <br />
     <a href="https://github.com/RobMadill/SpongeMe-Website"><strong>Explore the docs »</strong></a>
     <br />
@@ -56,7 +56,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+The idea was given to me by a friend after I had finished my second semester in second year at Sheridan College taking Software Development & Network Engineering. Thanks Spencer
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
